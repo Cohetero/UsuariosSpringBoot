@@ -124,7 +124,7 @@ Gradle
 ▶️ Cómo ejecutar el proyecto
 Clonar el repositorio:
 
-git clone URL\_DEL\_REPOSITORIO
+git clone [URL\_DEL\_REPOSITORIO](https://github.com/Cohetero/UsuariosSpringBoot)
 
 Ejecutar el proyecto desde tu IDE o terminal.
 Probar los endpoints usando Postman.
