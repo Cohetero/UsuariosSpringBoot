@@ -63,7 +63,13 @@
       "name": "Guardar",
       "request": {
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NjIxNDY3NCwiZXhwIjoxNzc2MjE4Mjc0fQ.h8cLs0SGPtTxYDl5dXCeU8uhyeGWiLVpKGbWQnff2yw",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\r\n    \"nombre\": \"Mauricio Cohetero\",\r\n    \"email\": \"mauriciocohetero@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"telefono\": \"2221234567\",\r\n    \"fechaRegistro\": \"2026-04-14T17:04:16.880756\"\r\n}",
@@ -92,7 +98,13 @@
       "name": "Editar",
       "request": {
         "method": "PUT",
-        "header": [],
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NjIxNDY3NCwiZXhwIjoxNzc2MjE4Mjc0fQ.h8cLs0SGPtTxYDl5dXCeU8uhyeGWiLVpKGbWQnff2yw",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\r\n    \"nombre\": \"Mauricio Cohetero\",\r\n    \"email\": \"mauriciocohetero@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"telefono\": \"2215150992\",\r\n    \"fechaRegistro\": \"2026-04-14T17:04:16.880756\"\r\n}",
@@ -103,7 +115,7 @@
           }
         },
         "url": {
-          "raw": "http://localhost:9000/usuario/editar/11",
+          "raw": "http://localhost:9000/usuario/editar/12",
           "protocol": "http",
           "host": [
             "localhost"
@@ -112,7 +124,7 @@
           "path": [
             "usuario",
             "editar",
-            "11"
+            "12"
           ]
         }
       },
@@ -122,9 +134,15 @@
       "name": "Eliminar",
       "request": {
         "method": "DELETE",
-        "header": [],
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NjIxNDY3NCwiZXhwIjoxNzc2MjE4Mjc0fQ.h8cLs0SGPtTxYDl5dXCeU8uhyeGWiLVpKGbWQnff2yw",
+            "type": "text"
+          }
+        ],
         "url": {
-          "raw": "http://localhost:9000/usuario/eliminar/11",
+          "raw": "http://localhost:9000/usuario/eliminar/12",
           "protocol": "http",
           "host": [
             "localhost"
@@ -133,7 +151,7 @@
           "path": [
             "usuario",
             "eliminar",
-            "11"
+            "12"
           ]
         }
       },
