@@ -106,6 +106,9 @@ Body (JSON)
   "telefono": "2221234567",
   "fechaRegistro": "2026-04-14T17:04:16.880756"
 }
+
+
+
 ❌ Eliminar usuario
 DELETE /usuario/eliminar/{id}
 
