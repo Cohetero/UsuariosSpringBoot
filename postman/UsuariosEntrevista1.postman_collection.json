@@ -1,0 +1,191 @@
+{
+  "info": {
+    "_postman_id": "a2cf5c94-cc54-4be8-848f-32bad00e2002",
+    "name": "UsuariosEntrevista1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12508975"
+  },
+  "item": [
+    {
+      "name": "Listar",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NjIxNDY3NCwiZXhwIjoxNzc2MjE4Mjc0fQ.h8cLs0SGPtTxYDl5dXCeU8uhyeGWiLVpKGbWQnff2yw",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:9000/usuario/listar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "usuario",
+            "listar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3NjIxNDY3NCwiZXhwIjoxNzc2MjE4Mjc0fQ.h8cLs0SGPtTxYDl5dXCeU8uhyeGWiLVpKGbWQnff2yw",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:9000/usuario/buscar/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "usuario",
+            "buscar",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Guardar",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Mauricio Cohetero\",\r\n    \"email\": \"mauriciocohetero@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"telefono\": \"2221234567\",\r\n    \"fechaRegistro\": \"2026-04-14T17:04:16.880756\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9000/usuario/guardar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "usuario",
+            "guardar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Editar",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Mauricio Cohetero\",\r\n    \"email\": \"mauriciocohetero@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"telefono\": \"2215150992\",\r\n    \"fechaRegistro\": \"2026-04-14T17:04:16.880756\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9000/usuario/editar/11",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "usuario",
+            "editar",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9000/usuario/eliminar/11",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "usuario",
+            "eliminar",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "text",
+              "uuid": "21f81439-88aa-4dba-82f2-200f6de75eb7"
+            },
+            {
+              "key": "password",
+              "value": "1234",
+              "type": "text",
+              "uuid": "71e26e1d-c234-4365-a1c2-55af342621d7"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:9000/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "login"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "admin",
+              "disabled": true
+            },
+            {
+              "key": "password",
+              "value": "1234",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
