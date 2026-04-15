@@ -116,7 +116,11 @@ Elimina un usuario mediante su ID.
 
 Headers
 Authorization: Bearer TU_TOKEN
-🛠️ Tecnologías utilizadas
+
+
+### 🛠️ Tecnologías utilizadas
+
+
 Java 17
 Spring Boot
 Spring Security
